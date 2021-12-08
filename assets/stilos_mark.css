@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+}
+
+.container__planes .conatiner{
+    margin-top: 50px;
+    background-color: yellow;
+}
+
+.container {
+    max-width: 1400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+}
+
+.container h3{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 100;
+    color: #FF6800;
+
+}
+
+.planes{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 520px;
+    gap: 200px;
+    margin-bottom: 80px;
+}
+
+.planes .plan{
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.planes .plan img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.planes .plan:nth-child(odd){
+    background-color: #f86e12;
+    border: 2px solid gray ;
+}
+
+.planes .plan:nth-child(even){
+    border: 2px solid #ff6800 ;
+}
+
+.planes .plan .precio{
+    margin-top: 20px;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+
+.planes .plan .modalidad{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.planes .plan .modalidad{
+    color: #fff;
+}
+
+.planes .plan .dos{
+    color: #ff6800;
+}
+
+.planes .plan .descripcion{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 2;
+    text-align: justify;
+    color: #fff;
+}
+
+.planes .plan .descripcion__dos{
+    color: gray;
+}
+
+.planes .plan .btn__donar{
+    width: 50%;
+    display: block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    color: #ff6800;
+    animation: agrandar 1.2s infinite alternate;
+    background-color: #fff;
+}
+
+@keyframes agrandar{
+    to{
+        transition: scale(.6);
+    }
+    from{
+        transform: scale(1.05);
+    }
+}
+
+.planes .plan .btn__dos{
+    border: 2px solid #ff66009f;
+}
+
+.planes .plan .btn__donar:nth-child(even){
+    background-color: #fff;
+}
+
+
+
+/* ACTIVIDADES */
+
+.actividades {
+    /* background-color: #ff6800; */
+    margin-bottom: 50px;
+}
+
+.actividades .container h2{
+    font-size: 40px;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.actividades .contenedor__imagenes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 300px;
+    gap: 50px;
+}
+
+.actividades .contenedor__imagenes .imagen{
+    position: relative;
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+}
+
+.actividades .contenedor__imagenes .imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.descripcion__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 20px;
+    opacity: 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.descripcion__img > *{
+    transform: translate(20px);
+    transition: transform 0.25s;
+    animation: agrandar 1.2s infinite alternate;
+}
+
+.descripcion__img:hover > *{
+    transform: translate(0px);
+    transition: 0.4s;
+}
+
+.descripcion__img:hover{
+    opacity: 1;
+    transition: 0.4s;
+}

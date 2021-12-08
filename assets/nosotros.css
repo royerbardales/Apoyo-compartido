@@ -1,0 +1,236 @@
+:root {
+    --oscuro: #0c0c0c;
+    --blanco: #fff;
+    --degradado: #f5f5f5;
+    --rojo: #ed2e44;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* Globales */
+body {
+    color: var(--rojo);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: var(--degradado);
+}
+p {
+    font-size: 1.8rem;
+    font-family: "Nunito", sans-serif;
+    text-align: justify;
+}
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+h1,
+h2 {
+    text-align: center;
+}
+/* contenido */
+.bg-nosotros {
+    background-color: #c4c4c4;
+    padding-bottom: 12rem;
+    background-image: url(img/diseño-lt.png);
+    position: relative;
+    top: 65px;
+}
+
+.bg-nosotros h1 {
+    color: var(--blanco);
+    margin-top: 50PX;
+}
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+}
+.nosotros h1 {
+    padding: 0;
+}
+.parrafo {
+    font-family: "Nunito", sans-serif;
+    font-size: 2rem;
+    color: var(--blanco);
+    text-align: center;
+    max-width: 43%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.parrafo-2 {
+    font-size: 1.8rem;
+    font-family: "Nunito", sans-serif;
+    text-align: justify;
+    color: var(--oscuro);
+}
+/* .nosotros p{
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    margin: -1rem auto 2rem auto;
+    padding: 0 auto;
+    
+} */
+.ancho-mision {
+    width: 105rem;
+}
+.ancho-valores {
+    width: 108.8rem;
+}
+.cuadro-mvv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5rem auto;
+}
+.cuadro-mvv2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 106.5rem;
+    margin: 18rem auto;
+    padding: 8rem auto;
+}
+.img-1 {
+    position: relative;
+    top: 5rem;
+    z-index: 1;
+}
+.altura {
+    height: 29.8rem;
+}
+.mision {
+    position: relative;
+    bottom: 1.5rem;
+    background-color: var(--blanco);
+    margin-left: -8rem;
+    border-radius: 1.5rem;
+    padding: 5rem;
+    z-index: 2;
+
+    /* text-align: left; */
+}
+.mision h2,
+.vision h2,
+.valores h2 {
+    text-align: left;
+    /* padding: auto 3rem; */
+}
+.vision {
+    position: relative;
+    bottom: 2rem;
+    background-color: var(--blanco);
+    margin-right: -9rem;
+    border-radius: 1.5rem;
+    padding: 6rem;
+    z-index: 2;
+}
+.valores {
+    position: relative;
+    bottom: 2.5rem;
+    background-color: var(--blanco);
+    margin-left: -6.5rem;
+    border-radius: 1.5rem;
+    padding: 5rem;
+    z-index: 2;
+
+    /* text-align: left; */
+}
+.centrado {
+    position: relative;
+    bottom: 1rem;
+}
+.contenedor {
+    max-width: 110rem;
+    margin: 0 auto;
+}
+.contenedor h1 {
+    font-weight: 600;
+    font-size: 4rem;
+    margin: 10rem auto 3rem auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 6rem;
+}
+
+.imagen {
+    position: relative;
+    left: 7.5rem;
+}
+.miequipo__persona {
+    color: var(--oscuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.miequipo__datosPersonales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.miequipo__iconos {
+    background-color: var(--rojo);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .footer__contenedor{
+    display: flex;
+    justify-content: right;
+} */
+/* CREANDO SLIDER  -----*/
+.container-slider {
+    /* width: 90%;
+    max-width: 120rem;
+    margin: auto; */
+    overflow: hidden;
+    position: relative;
+}
+.slider {
+    display: flex;
+    /* width: 104.4rem;
+    height: 66rem; */
+}
+.slider__section {
+    width: 100%;
+}
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.slider-btn-right {
+    right: 1rem;
+}
+.slider-btn-left {
+    left: 1rem;
+}
